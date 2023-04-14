@@ -1,8 +1,43 @@
-# Getting Started with Create React App
+# MacOS Monterey 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This open source project is made in the hope to replicate the macos desktop experience on web.
 
-## Available Scripts
+## TECH Stack
+ReactJS, CSS
+
+Folder Structure
+
+Src/assets for css and images 
+
+## src/assets/img 
+Use for images
+
+## src/assets/css/app.css
+For css
+
+
+### screens/browser.js
+Google search engine
+
+### screens/edge.js
+Bing search engine
+
+
+### screens/lockscreen.js
+First screen of macos (signin screen)
+
+
+### screens/homescreen.js
+First screen after login
+
+
+### screens/common/header.js
+mac like top bar
+
+
+
+
+# Available Scripts
 
 In the project directory, you can run:
 
@@ -10,6 +45,7 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+live version :amansharma.co
 
 check live version : https://amansharma.co/
 
