@@ -7,6 +7,7 @@ function Browser(){
     function handleHome() {
         navigate('/homescreen');
     }
+    
     return(
         <>    
          <div className='close'>
