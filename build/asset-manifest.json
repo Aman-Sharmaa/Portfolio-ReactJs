@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.78243ba7.css",
-    "main.js": "/static/js/main.89bc5e1a.js",
+    "main.css": "/static/css/main.26355cfb.css",
+    "main.js": "/static/js/main.de2265b8.js",
     "static/js/787.43cc6ebb.chunk.js": "/static/js/787.43cc6ebb.chunk.js",
     "static/media/easyexport.svg": "/static/media/easyexport.64f3f16b3e9c24d20cbcfde7501b2d87.svg",
     "static/media/bl.svg": "/static/media/bl.8131aef82fbe012c837616de1d869dd7.svg",
@@ -10,15 +10,21 @@
     "static/media/florosense.svg": "/static/media/florosense.7e277c9e5b26b36a56a2e1dfca2c720f.svg",
     "static/media/aman.svg": "/static/media/aman.a9ab94b9e74d5279b1ddea9167c04a86.svg",
     "static/media/aikya.svg": "/static/media/aikya.9e0e54684629306fbe11b81cc970c852.svg",
+    "static/media/easy.png": "/static/media/easy.169afedb7220ef46f722.png",
+    "static/media/gilroy-bold-webfont.woff": "/static/media/gilroy-bold-webfont.16bd6a430e1f25cc1239.woff",
+    "static/media/gilroy-semibold-webfont.woff": "/static/media/gilroy-semibold-webfont.1d9e67c1d14fb9d9d76b.woff",
+    "static/media/gilroy-extrabold-webfont.woff": "/static/media/gilroy-extrabold-webfont.5ec1f4019da3631a1e4d.woff",
+    "static/media/gilroy-medium-webfont.woff": "/static/media/gilroy-medium-webfont.b80794a5f98ec99a77fc.woff",
+    "static/media/gilroy-light-webfont.woff": "/static/media/gilroy-light-webfont.25fc43876fecd92ef570.woff",
+    "static/media/gilroy-regular-webfont.woff": "/static/media/gilroy-regular-webfont.f6c0adc94cc030c064ff.woff",
     "static/media/dr.png": "/static/media/dr.3bf65797fd4f95cae2da.png",
-    "static/media/easybil.svg": "/static/media/easybil.2602e4993966643faee986a0829ddce2.svg",
     "index.html": "/index.html",
-    "main.78243ba7.css.map": "/static/css/main.78243ba7.css.map",
-    "main.89bc5e1a.js.map": "/static/js/main.89bc5e1a.js.map",
+    "main.26355cfb.css.map": "/static/css/main.26355cfb.css.map",
+    "main.de2265b8.js.map": "/static/js/main.de2265b8.js.map",
     "787.43cc6ebb.chunk.js.map": "/static/js/787.43cc6ebb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78243ba7.css",
-    "static/js/main.89bc5e1a.js"
+    "static/css/main.26355cfb.css",
+    "static/js/main.de2265b8.js"
   ]
 }
