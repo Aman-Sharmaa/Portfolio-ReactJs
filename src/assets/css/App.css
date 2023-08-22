@@ -332,7 +332,7 @@ background-color: rgb(246, 248, 250);
     border: solid #f9f9f9;
     cursor: pointer;
     margin-left: 10px;
-    margin-top: -31px;
+    margin-top: 0px;
 }
 .projects{
     padding: 10px;
