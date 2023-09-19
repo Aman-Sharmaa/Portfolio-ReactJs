@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { AiOutlinePlusCircle, AiOutlineCopy } from "react-icons/ai";
-import { GrFormNext } from "react-icons/gr";
-import { FaHandPaper } from "react-icons/fa";
+import { AiOutlinePlusCircle, AiFillPhone } from "react-icons/ai";
+import { BsPhoneVibrate } from "react-icons/bs";
+import { FaGoogleDrive } from "react-icons/fa";
 
 import { useNavigate, Link } from "react-router-dom";
 import Aman from "../../assets/img/aman.svg";
@@ -40,23 +40,23 @@ function NewTemplate() {
               </a>
               <p>
                 Drop a ❤️ on
-                <a href="mailto:amnshrmaa@gmail.com">hi@amansharma.co</a>
+                <a href="mailto:amansharma57269@gmail.com">Mail</a>
               </p>
               <div className="btn">
                 <a href="tel:+91 9506521413">
                   <button id="darkBtn">
-                    <AiOutlinePlusCircle id="darkIcon" />
-                    Hire Me
+                    <BsPhoneVibrate id="darkIcon" />
+                    Call Me
                   </button>
                 </a>
 
                 <a
-                  href="https://calendly.com/amnshrma/30min?back=1&month=2023-08"
+                  href="https://drive.google.com/file/d/1X4SqpfKcD0z8ShvYMsf1LwL6LK2QwhL3/view"
                   target="_blank"
                 >
                   <button id="lightBtn">
-                    <AiOutlineCopy id="darkIcon" />
-                    Connect
+                    <FaGoogleDrive id="darkIcon" />
+                    Resume
                   </button>
                 </a>
               </div>
@@ -89,7 +89,7 @@ function NewTemplate() {
             </div>
           </a> */}
 
-          <a href="https://bit.ly/esyxprt" target="_blank">
+          <a href="https://easyexport.in" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={EASY} />
@@ -101,7 +101,7 @@ function NewTemplate() {
               <div className="projectView">{/*  */}</div>
             </div>
           </a>
-          <a href="https://bit.ly/floro" target="_blank">
+          <a href="https://florosense.com" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={Floro} />
@@ -113,7 +113,7 @@ function NewTemplate() {
               <div className="projectView"></div>
             </div>
           </a>
-          <a href="https://bit.ly/aikyaa" target="_blank">
+          <a href="https://aikyaa.in" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={Aikyaa} />
@@ -137,7 +137,7 @@ function NewTemplate() {
               <div className="projectView"></div>
             </div>
           </a> */}
-          <a href="https://bit.ly/esyxprt" target="_blank">
+          <a href="https://bill.easyexport.in" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={Esy} />
@@ -173,7 +173,7 @@ function NewTemplate() {
               <div className="projectView"></div>
             </div>
           </a> */}
-          <a href="https://bit.ly/mgrnd" target="_blank">
+          <a href="https://multigrad.in" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={MG} />
