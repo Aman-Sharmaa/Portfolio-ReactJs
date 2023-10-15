@@ -31,12 +31,12 @@ function NewTemplate() {
             <p>
               Transforming ideas into reality!
               <br />
-              Currently Working at
+              Currently Building at
               <a
-                href="https://www.linkedin.com/company/mykids-ventures-private-limited/"
+                href="https://app.multigrad.in"
                 target="_blank"
               >
-                BeingTheParent
+                Multigrad (FightAge Private Limited)
               </a>
               <p>
                 Drop a ❤️ on
