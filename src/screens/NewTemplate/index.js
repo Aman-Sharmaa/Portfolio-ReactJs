@@ -31,22 +31,22 @@ function NewTemplate() {
             <p>
               Transforming ideas into reality!
               <br />
-              Currently Building at
+              Currently Building
               <a
                 href="https://app.multigrad.in"
                 target="_blank"
               >
-                Multigrad (FightAge Private Limited)
+                Multigrad
               </a>
               <p>
-                Drop a ❤️ on
+                Drop inquiry on
                 <a href="mailto:amansharma57269@gmail.com">Mail</a>
               </p>
               <div className="btn">
                 <a href="tel:+91 9506521413">
                   <button id="darkBtn">
                     <BsPhoneVibrate id="darkIcon" />
-                    Call Me
+                    Call
                   </button>
                 </a>
 
