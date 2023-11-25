@@ -194,7 +194,7 @@
        padding: 20px;
  border-radius: 8px;
  margin-top: 15px;
- height: 60px;
+ height: auto;
  padding-top: 15px;
 }
 
@@ -215,9 +215,10 @@
 }
 
 .projectView{
-    width: 19%;
+    width: 100%;
     float: left;
     justify-content: right;
+    opacity: 0.7;
 }
 
 #overview{

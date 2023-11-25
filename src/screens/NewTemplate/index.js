@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { AiOutlinePlusCircle, AiFillPhone } from "react-icons/ai";
 import { BsPhoneVibrate } from "react-icons/bs";
 import { FaGoogleDrive } from "react-icons/fa";
-
+import BTP  from "../../assets/img/btp.png";
+import FH  from "../../assets/img/firsthive.png";
 import { useNavigate, Link } from "react-router-dom";
 import Aman from "../../assets/img/aman.svg";
 import BL from "../../assets/img/bl.svg";
@@ -31,12 +32,12 @@ function NewTemplate() {
             <p>
               Transforming ideas into reality!
               <br />
-              Currently Building
+              Currently working at
               <a
-                href="https://app.multigrad.in"
+                href="https://www.linkedin.com/company/firsthivecdp/"
                 target="_blank"
               >
-                Multigrad
+                FirstHive (CDP)
               </a>
               <p>
                 Drop inquiry on
@@ -65,6 +66,77 @@ function NewTemplate() {
           <div className="name-profile-right">
             <img src={Aman} />
           </div>
+        </div>
+
+        <div className="projects">
+          <div className="userName-active">
+            <h1>
+              <span id="active" />
+              Skills
+            </h1>
+          </div>
+          <div className="skills">
+            <p id="type">Backend Technology</p>
+            <p>ExpressJs, NodeJs, PHP</p>
+            <p id="type">FrontEnd Technology</p>
+            <p>
+              ReactJs, HTML5, CSS3, BootStrap, JS, Wordpress(Custom
+              Developement), ElectronJs
+            </p>
+            <p id="type">Tools & Technology</p>
+            <p>Figma, Github, Linux</p>
+            <p id="type">App Developement</p>
+            <p>React Native</p>
+            <p>
+              <a href="https://bit.ly/amnshrma" target="_blank">
+                Download Resume
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="projects">
+          <div className="userName-active">
+            <h1>
+              <span id="active" />
+              Work Experience 
+            </h1>
+          </div>
+        
+        
+          <a href="https://www.linkedin.com/company/firsthivecdp/mycompany/" target="_blank">
+            <div className="ListOfProjects">
+              <div className="projectImg">
+                <img src={FH} />
+              </div>
+              <div className="projectName">
+                <p id="name">FirstHive</p>
+                <p id="overview">Customer Data Platfro</p>
+              </div>
+              <div className="projectView">
+                <p>Nov 2023 - Present</p>
+              </div>
+            </div>
+          </a>
+   
+        
+
+          <a href="https://www.linkedin.com/company/mykids-ventures-private-limited/" target="_blank">
+            <div className="ListOfProjects">
+              <div className="projectImg">
+                <img src={BTP} />
+              </div>
+              <div className="projectName">
+                <p id="name">Being The Parent</p>
+                <p id="overview">Pregnancy & Parenting Solutions</p>
+              </div>
+              <div className="projectView">
+                <p>Aug 2021 - Oct 2023 · 2 yrs 3 mos</p>
+              </div>
+            </div>
+          </a>
+   
+        
+       
         </div>
         <div className="projects">
           <div className="userName-active">
@@ -186,32 +258,7 @@ function NewTemplate() {
             </div>
           </a>
         </div>
-        <div className="projects">
-          <div className="userName-active">
-            <h1>
-              <span id="active" />
-              Skills
-            </h1>
-          </div>
-          <div className="skills">
-            <p id="type">Backend Technology</p>
-            <p>ExpressJs, NodeJs, PHP</p>
-            <p id="type">FrontEnd Technology</p>
-            <p>
-              ReactJs, HTML5, CSS3, BootStrap, JS, Wordpress(Custom
-              Developement), ElectronJs
-            </p>
-            <p id="type">Tools & Technology</p>
-            <p>Figma, Github, Linux</p>
-            <p id="type">App Developement</p>
-            <p>React Native</p>
-            <p>
-              <a href="https://bit.ly/amnshrma" target="_blank">
-                Download Resume
-              </a>
-            </p>
-          </div>
-        </div>
+     
         <div className="connect">
           <h3>Let's work together</h3>
           <p>Transforming ideas into reality!</p>
