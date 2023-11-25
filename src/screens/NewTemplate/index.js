@@ -110,7 +110,7 @@ function NewTemplate() {
               </div>
               <div className="projectName">
                 <p id="name">FirstHive</p>
-                <p id="overview">Customer Data Platfro</p>
+                <p id="overview">Customer Data Platform</p>
               </div>
               <div className="projectView">
                 <p>Nov 2023 - Present</p>
