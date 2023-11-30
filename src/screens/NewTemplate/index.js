@@ -15,7 +15,58 @@ import Aikyaa from "../../assets/img/aikya.svg";
 import Indie from "../../assets/img/indiecherry.svg";
 import DR from "../../assets/img/dr.png";
 import MG from "../../assets/img/mg.png";
+import { MdOnlinePrediction } from "react-icons/md";
+
 function NewTemplate() {
+  const [activity, setActivity] = useState('');
+  useEffect(() => {
+    const getCurrentTime = () => {
+      const currentTime = new Date().toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: 'numeric',
+        minute: 'numeric',
+      });
+      return currentTime;
+    };
+
+    const updateActivity = () => {
+      const currentTime = getCurrentTime();
+      const timeRanges = [
+        { start: '08:00', end: '08:30', activity: 'Trying to Wake Up 🛀🏻' },
+        { start: '08:30', end: '09:00', activity: 'Bathing 🛀🏻' },
+        { start: '09:00', end: '10:00', activity: 'Travelling' },
+        { start: '10:00', end: '10:20', activity: 'Tea Time ☕' },
+        { start: '10:20', end: '13:00', activity: 'Working ⌨️' },
+        { start: '13:00', end: '14:00', activity: 'Lunch Time' },
+        { start: '14:00', end: '16:00', activity: 'Working ⌨️' },
+        { start: '16:00', end: '16:20', activity: 'Tea Time ☕' },
+        { start: '16:20', end: '18:00', activity: 'Working ⌨️' },
+        { start: '18:00', end: '18:40', activity: 'Travelling' },
+        { start: '18:40', end: '19:00', activity: 'Resting' },
+        { start: '19:00', end: '20:00', activity: 'Free Time 🆓' },
+        { start: '20:00', end: '21:00', activity: 'Dinner Time 🍽️' },
+        { start: '21:00', end: '00:00', activity: 'On call! 🛌' },
+        { start: '00:00', end: '08:00', activity: 'Sleeping 🛌' },
+      ];
+
+   
+      for (const range of timeRanges) {
+        const startTime = new Date(`01/01/2000 ${range.start}`);
+        const endTime = new Date(`01/01/2000 ${range.end}`);
+        const currentTime = new Date(`01/01/2000 ${getCurrentTime()}`);
+
+        if (currentTime >= startTime && currentTime < endTime) {
+          setActivity(range.activity);
+          break;
+        }
+      }
+    };
+
+    updateActivity();
+    const interval = setInterval(updateActivity, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className="main-container">
       <div className="home-div">
@@ -24,7 +75,7 @@ function NewTemplate() {
             <span id="active" />
             Full-Stack Developer
           </h1>
-          <p>Available for work</p>
+          <p>{activity}</p>
         </div>
         <div className="name-profile">
           <div className="name-profile-left">
@@ -60,6 +111,15 @@ function NewTemplate() {
                     Resume
                   </button>
                 </a>
+                <a
+                  href="https://calendly.com/amnshrma/30min"
+                  target="_blank"
+                >
+                  <button id="lightBtn">
+                  <MdOnlinePrediction id="darkIcon" />
+                    1:1 Connect
+                  </button>
+                </a>
               </div>
             </p>
           </div>
@@ -84,7 +144,7 @@ function NewTemplate() {
               Developement), ElectronJs
             </p>
             <p id="type">Tools & Technology</p>
-            <p>Figma, Github, Linux</p>
+            <p>Figma,<a href="https://github.com/Aman-Sharmaa" target="_blank"> Github</a>, Linux</p>
             <p id="type">App Developement</p>
             <p>React Native</p>
             <p>
@@ -103,7 +163,7 @@ function NewTemplate() {
           </div>
         
         
-          <a href="https://www.linkedin.com/company/firsthivecdp/mycompany/" target="_blank">
+        
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={FH} />
@@ -115,12 +175,18 @@ function NewTemplate() {
               <div className="projectView">
                 <p>Nov 2023 - Present</p>
               </div>
+              <div className="readmore">
+              <a href="https://www.linkedin.com/company/firsthivecdp/mycompany/" target="_blank">
+                <p>Read more</p>
+              </a>
+              </div>
+            
             </div>
-          </a>
+       
    
         
 
-          <a href="https://www.linkedin.com/company/mykids-ventures-private-limited/" target="_blank">
+       
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={BTP} />
@@ -132,8 +198,13 @@ function NewTemplate() {
               <div className="projectView">
                 <p>Aug 2021 - Oct 2023 · 2 yrs 3 mos</p>
               </div>
+              <div className="readmore">
+              <a href="https://www.linkedin.com/company/mykids-ventures-private-limited/" target="_blank">
+              <p>Read more</p>
+              </a>
+              </div>
             </div>
-          </a>
+      
    
         
        
@@ -145,7 +216,7 @@ function NewTemplate() {
               Projects (R&D)
             </h1>
           </div>
-          {/*
+          
           <a href="https://btpbrandlabs.com/" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
@@ -159,7 +230,7 @@ function NewTemplate() {
 
               </div>
             </div>
-          </a> */}
+          </a>
 
           <a href="https://easyexport.in" target="_blank">
             <div className="ListOfProjects">
@@ -197,7 +268,7 @@ function NewTemplate() {
               <div className="projectView"></div>
             </div>
           </a>
-          {/* <a href="https://indiecherry.com/" target="_blank">
+          <a href="https://indiecherry.com/" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={Indie} />
@@ -208,7 +279,7 @@ function NewTemplate() {
               </div>
               <div className="projectView"></div>
             </div>
-          </a> */}
+          </a>
           <a href="https://bill.easyexport.in" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
@@ -221,7 +292,7 @@ function NewTemplate() {
               <div className="projectView"></div>
             </div>
           </a>
-          {/* <a href="https://www.pediatricimmunologist.in/" target="_blank">
+          <a href="https://www.pediatricimmunologist.in/" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={Ped} />
@@ -244,7 +315,7 @@ function NewTemplate() {
               </div>
               <div className="projectView"></div>
             </div>
-          </a> */}
+          </a>
           <a href="https://multigrad.in" target="_blank">
             <div className="ListOfProjects">
               <div className="projectImg">
@@ -258,23 +329,15 @@ function NewTemplate() {
             </div>
           </a>
         </div>
-     
+        
         <div className="connect">
           <h3>Let's work together</h3>
           <p>Transforming ideas into reality!</p>
           <div className="btnCnt"></div>
         </div>
-
-        {/* <div className="social">
-          <div className="userName-active">
-            <h1>
-              <span id="active" />
-              Resume
-            </h1>
-          </div>
-          <div className="socialRight"></div>
-        </div> */}
+       
       </div>
+     
     </div>
   );
 }
