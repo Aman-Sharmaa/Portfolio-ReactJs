@@ -117,7 +117,7 @@ function NewTemplate() {
                 >
                   <button id="lightBtn">
                   <MdOnlinePrediction id="darkIcon" />
-                    1:1 Connect
+                    1:1 ?
                   </button>
                 </a>
               </div>
