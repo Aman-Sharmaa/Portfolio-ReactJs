@@ -102,7 +102,7 @@ function NewTemplate() {
                   </button>
                 </a>
 
-                <a
+                {/* <a
                   href="https://drive.google.com/file/d/1X4SqpfKcD0z8ShvYMsf1LwL6LK2QwhL3/view"
                   target="_blank"
                 >
@@ -110,14 +110,14 @@ function NewTemplate() {
                     <FaGoogleDrive id="darkIcon" />
                     Resume
                   </button>
-                </a>
+                </a> */}
                 <a
                   href="https://calendly.com/amnshrma/30min"
                   target="_blank"
                 >
                   <button id="lightBtn">
                   <MdOnlinePrediction id="darkIcon" />
-                    1:1 ?
+                    Let's connect?
                   </button>
                 </a>
               </div>
