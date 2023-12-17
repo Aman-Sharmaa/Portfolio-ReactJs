@@ -101,7 +101,7 @@ function NewTemplate() {
           <div className="name-profile-left">
             <h2>I'm Aman Sharma</h2>
             <p>
-            
+            <p>Transforming ideas into reality!</p>
               <br />
               Building 
               <a

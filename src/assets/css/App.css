@@ -120,11 +120,15 @@
     margin-top: 40px;
 }
 
-.name-profile-left p{
+.name-profile-left p {
     color: #666D80;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    width: 150%;
+    margin-top: 0px;
+    float: left;
+    overflow: hidden;
 }
 
 .name-profile-left a{
