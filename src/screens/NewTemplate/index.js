@@ -108,7 +108,7 @@ function NewTemplate() {
                 href="https://www.linkedin.com/company/rapydlaunch/"
                 target="_blank"
               >
-                RapydLaynch
+                RapydLaunch
               </a>
               <p>
                 Drop inquiry on
