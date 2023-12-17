@@ -15,6 +15,7 @@ import Aikyaa from "../../assets/img/aikya.svg";
 import Indie from "../../assets/img/indiecherry.svg";
 import DR from "../../assets/img/dr.png";
 import MG from "../../assets/img/mg.png";
+import Rapyd from "../../assets/img/rapydlaunch.png";
 import { MdOnlinePrediction } from "react-icons/md";
 
 function NewTemplate() {
@@ -67,6 +68,25 @@ function NewTemplate() {
     return () => clearInterval(interval);
   }, []);
 
+
+  const [difference, setDifference] = useState({ years: 0, months: 0 });
+
+  useEffect(() => {
+    const startDate = new Date('2021-08-12');
+    const currentDate = new Date();
+
+    let years = currentDate.getFullYear() - startDate.getFullYear();
+    let months = currentDate.getMonth() - startDate.getMonth();
+
+    if (months < 0) {
+      years--;
+      months += 12;
+    }
+
+    setDifference({ years, months });
+  }, []);
+
+
   return (
     <div className="main-container">
       <div className="home-div">
@@ -81,18 +101,19 @@ function NewTemplate() {
           <div className="name-profile-left">
             <h2>I'm Aman Sharma</h2>
             <p>
-              Transforming ideas into reality!
+            
               <br />
-              Currently working at
+              Building 
               <a
-                href="https://www.linkedin.com/company/firsthivecdp/"
+                href="https://www.linkedin.com/company/rapydlaunch/"
                 target="_blank"
               >
-                FirstHive (CDP)
+                RapydLaynch
               </a>
               <p>
                 Drop inquiry on
-                <a href="mailto:amansharma57269@gmail.com">Mail</a>
+                <a href="mailto:amansharma57269@gmail.com">Mail</a>{` or `}
+                <a href="https://www.linkedin.com/in/amnshrma/" target="_blank">Linkedin</a>
               </p>
               <div className="btn">
                 <a href="tel:+91 9506521413">
@@ -102,15 +123,7 @@ function NewTemplate() {
                   </button>
                 </a>
 
-                {/* <a
-                  href="https://drive.google.com/file/d/1X4SqpfKcD0z8ShvYMsf1LwL6LK2QwhL3/view"
-                  target="_blank"
-                >
-                  <button id="lightBtn">
-                    <FaGoogleDrive id="darkIcon" />
-                    Resume
-                  </button>
-                </a> */}
+      
                 <a
                   href="https://calendly.com/amnshrma/30min"
                   target="_blank"
@@ -148,6 +161,7 @@ function NewTemplate() {
             <p id="type">App Developement</p>
             <p>React Native</p>
             <p>
+             
               <a href="https://bit.ly/amnshrma" target="_blank">
                 Download Resume
               </a>
@@ -158,12 +172,14 @@ function NewTemplate() {
           <div className="userName-active">
             <h1>
               <span id="active" />
-              Work Experience 
+              Work Experience {' '}(
+              {difference.years} {difference.years === 1 ? 'years' : 'years'},{' '}
+        {difference.months} {difference.months === 1 ? 'm' : 'm'})
             </h1>
           </div>
         
         
-        
+
             <div className="ListOfProjects">
               <div className="projectImg">
                 <img src={FH} />
@@ -209,6 +225,44 @@ function NewTemplate() {
         
        
         </div>
+
+        <div className="projects">
+          <div className="userName-active">
+            <h1>
+              <span id="active" />
+              Founder/Owner
+            </h1>
+          </div>
+
+          <a href="https://rapydlaunch.com" target="_blank">
+            <div className="ListOfProjects">
+              <div className="projectImgFounder">
+                <img src={Rapyd} />
+              </div>
+              <div className="projectName">
+                <p id="name">RapydLaunch</p>
+                <p id="overview">Fast Finger, Fast Thing – Rapid Software</p>
+              </div>
+              <div className="projectView"></div>
+            </div>
+          </a>
+
+          <a href="https://multigrad.in" target="_blank">
+            <div className="ListOfProjects">
+              <div className="projectImgFounder">
+                <img src={MG} />
+              </div>
+              <div className="projectName">
+                <p id="name">Multigrad (FightAge Private Limited)</p>
+                <p id="overview">Connect with your circle and interest!</p>
+              </div>
+              <div className="projectView"></div>
+            </div>
+          </a>
+
+
+          </div>
+
         <div className="projects">
           <div className="userName-active">
             <h1>
@@ -316,24 +370,34 @@ function NewTemplate() {
               <div className="projectView"></div>
             </div>
           </a>
-          <a href="https://multigrad.in" target="_blank">
-            <div className="ListOfProjects">
-              <div className="projectImg">
-                <img src={MG} />
-              </div>
-              <div className="projectName">
-                <p id="name">Multigrad</p>
-                <p id="overview">Edtech, React Native, MERN </p>
-              </div>
-              <div className="projectView"></div>
-            </div>
-          </a>
+         
         </div>
+
+
+
+        
+
+
         
         <div className="connect">
           <h3>Let's work together</h3>
           <p>Transforming ideas into reality!</p>
-          <div className="btnCnt"></div>
+                    <div className="btnCnt">
+                    <a href="tel:+91 9506521413">
+                  <button id="darkBtn">
+                    <BsPhoneVibrate id="darkIcon" />
+                    Call
+                  </button>
+                </a>
+                      <a  href="https://calendly.com/amnshrma/30min"
+                  target="_blank"
+                >
+                  <button id="lightBtn">
+                  <MdOnlinePrediction id="darkIcon" />
+                    Connect?
+                  </button>
+                </a>
+                    </div>
         </div>
        
       </div>

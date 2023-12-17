@@ -207,7 +207,15 @@
     border-radius: 100px;
     border: solid #f9f9f9 2px;
 }
-
+.projectImgFounder{
+    width: 50px;
+    float: left;
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid #f9f9f9 2px;
+}
 .projectName{
     width: 60%;
     float: left;
@@ -250,7 +258,12 @@ a#mark {
     border-radius: 100px;
     object-fit: contain;
 }
-
+.projectImgFounder img{
+    width: 100%;
+    float: left;
+    border-radius: 10px;
+    object-fit: contain;
+}
 #name{
     font-weight: 600;
     color: rgb(53, 56, 73);
