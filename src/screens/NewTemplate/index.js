@@ -102,16 +102,9 @@ function NewTemplate() {
             <h2>I'm Aman Sharma</h2>
             <p>
             <p>Transforming ideas into reality!</p>
-              <br />
-              Building 
-              <a
-                href="https://www.linkedin.com/company/rapydlaunch/"
-                target="_blank"
-              >
-                RapydLaunch
-              </a>
+             
               <p>
-                Drop inquiry on
+               Let's connect
                 <a href="mailto:amansharma57269@gmail.com">Mail</a>{` or `}
                 <a href="https://www.linkedin.com/in/amnshrma/" target="_blank">Linkedin</a>
               </p>
@@ -226,7 +219,7 @@ function NewTemplate() {
        
         </div>
 
-        <div className="projects">
+        {/* <div className="projects">
           <div className="userName-active">
             <h1>
               <span id="active" />
@@ -261,7 +254,7 @@ function NewTemplate() {
           </a>
 
 
-          </div>
+          </div> */}
 
         <div className="projects">
           <div className="userName-active">
